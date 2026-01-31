@@ -1,0 +1,51 @@
+.container {
+    padding: 16px;
+    background-color: var(--secondary20);
+    border: 1px solid var(--secondary);
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    align-items: auto;
+    margin-bottom: 24px;
+}
+
+.collapsible summary {
+    font-weight: bold;
+}
+
+.section {
+    padding: 16px;
+    background-color: var(--secondary20);
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+}
+
+.separator {
+    border: 0;
+    border-bottom: 1px solid var(--secondary);
+    margin: 1rem 0;
+}
+
+.collapsible[open] summary+.separator {
+    border-bottom: 1px solid var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.collapsible-detail:last-of-type+.separator {
+    display: none;
+}
+
+.collapsible-detail:last-of-type p {
+    margin-bottom: 0;
+}
+
+.block {
+    padding: 12px;
+    background-color: var(--secondary20);
+    border: 1px solid var(--secondary);
+    border-radius: 4px;
+    width: fit-content;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}

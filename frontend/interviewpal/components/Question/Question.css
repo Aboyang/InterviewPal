@@ -1,0 +1,63 @@
+/* Center container */
+.question-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: left;
+    padding: 16px;
+    background-color: var(--secondary20);
+    border: 1px solid var(--secondary);
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+}
+
+/* Initial button / box */
+.box {
+  width: 160px;
+  height: 50px;
+  background-color: #22c55e; /* Green color */
+  color: white;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+/* Expanded box */
+.box.expanded {
+  width: 70%;
+  height: 70%;
+  background-color: #d1fae5; /* Light green for expanded box */
+  color: black;
+  border-radius: 12px;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Button text */
+.button-text {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Expanded content */
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content h2 {
+  margin-bottom: 16px;
+}
+
+/* Scrollable questions area */
+.questions {
+  flex: 1;
+  overflow-y: auto;
+}

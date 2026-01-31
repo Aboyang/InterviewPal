@@ -1,0 +1,36 @@
+.onboarding-container {
+    width: 600px;
+    max-width: 100%;
+}
+
+.reduce-margin-top {
+    margin-top: -0.5rem;
+    /* this is applied to the h3 element so that the elements are visually centered. */
+}
+
+.arrows-container-container {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+}
+
+.arrows-container {
+    transform: translateY(37.904px);
+    height: 56px;
+    /* This is to account for h3's bottom margin, so that arrows can be in line with actual contents */
+    pointer-events: none;
+}
+
+.arrows-container button {
+    pointer-events: auto;
+}
+
+.btn-back {
+    position: absolute;
+    left: 8px;
+}
+
+.btn-next {
+    position: absolute;
+    right: 8px;
+}

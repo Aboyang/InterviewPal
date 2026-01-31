@@ -1,0 +1,158 @@
+:root {
+    --text: #17130b;
+    --background: #fcfbf8;
+    --primary: #ffb62e;
+    --primary-bright: #ffc63e;
+    --secondary: #acc79e;
+    --secondary20: #acc79e33;
+    --accent: #b7c484;
+    --shadow: #302c1f2a;
+    color-scheme: light;
+    color: var(--text);
+    background-color: var(--background);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(120deg, #ffc63e22, #acc79e22);
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'IBM Plex Sans';
+    font-weight: 700;
+}
+
+html {
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 4.210rem;
+    /* 67.36px */
+}
+
+h2 {
+    font-size: 3.158rem;
+    /* 50.56px */
+}
+
+h3 {
+    font-size: 2.369rem;
+    /* 37.92px */
+}
+
+h4 {
+    font-size: 1.777rem;
+    /* 28.48px */
+}
+
+h5 {
+    font-size: 1.333rem;
+    /* 21.28px */
+}
+
+small {
+    font-size: 0.750rem;
+    /* 12px */
+}
+
+a {
+    font-weight: 500;
+    color: var(--primary);
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: var(--primary-bright);
+}
+
+input,
+button,
+label {
+    box-sizing: border-box;
+}
+
+button {
+    border-radius: 12px;
+    border: none;
+    color: black;
+    background-color: var(--secondary20);
+    padding: 16px 24px;
+    transition: all 0.2s;
+    width: fit-content;
+}
+
+button:hover {
+    transform: translateY(-4px);
+}
+
+button:active {
+    transform: translateY(0px);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+.btn-large {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 32px;
+}
+
+.btn-icon {
+    padding: 16px;
+}
+
+.btn-icon span {
+    line-height: 1;
+    display: block;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.centerer-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+}
